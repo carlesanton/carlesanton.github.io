@@ -1,1 +1,13 @@
 .DS_Store
+
+portfolio/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
