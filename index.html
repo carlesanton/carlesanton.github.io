@@ -38,8 +38,9 @@
     const spacing = 1;
     const cols = p.ceil(bgWidth / spacing);
     const rows = p.ceil(bgHeight / spacing);
-    const min_aspect_ratio = 0.7; // width / height
+    const min_aspect_ratio = 0.9; // width / height
     const max_aspect_ratio = 2.3; // width / height
+    const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
     const vert = `
 #ifdef GL_ES
 precision highp float;
@@ -255,12 +256,25 @@ void main() {
       p.noStroke();
       p.shader(shaderProgram);
 
-      // Compute Noise Position
-      let noisePosition = ((p.mouseY / p.height) * p.width + p.mouseX) * 0.01;
+      // Compute Mouse Position
+      let normX, normY;
+      let time = p.millis()/20000;
+
+      if (isTouchDevice) {
+        // On touch devices, use drag-based control
+        scrollY = document.documentElement.scrollTop
+        normX = 0.5;
+        normY = p.constrain(scrollY / p.height, 0, 1)*0.5;
+        time *= 0.6;
+      } else {
+        // On mouse devices, use mouse position
+        normX = p.constrain(p.mouseX / p.width, 0, 1);
+        normY = p.constrain(p.mouseY / p.height, 0, 1);
+      }
 
       // Pass uniforms
-      shaderProgram.setUniform('uTime', p.millis()/10000);
-      shaderProgram.setUniform('uMouse', [p.mouseX / p.width, p.mouseY / p.height]);
+      shaderProgram.setUniform('uTime', time);
+      shaderProgram.setUniform('uMouse', [normX, normY]);
 
       // Draw plane
       // Set orthographic projection
