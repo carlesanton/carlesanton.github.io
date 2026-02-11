@@ -1,4 +1,19 @@
-<!DOCTYPE html><!-- Import Tailwind + DaisyUI globally --><html lang="en" data-theme="portfolio"> <head><link rel="sitemap" href="/sitemap-index.xml"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Carles Antón</title><meta name="description" content="Carles Antón - Creative engineer specializing in real-time visuals, motion-tracking, generative systems interactive installations, Unreal Engine, TouchDesigner and P5JS"><meta name="google-site-verification" content="lKhRbGinmu_YZU8RJ5PCFWMdXKNm0UkoDV0AgY98XPQ"><!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" /> --><link rel="icon" type="image/x-icon" href="/img/favicon.png"><script type="module" src="/_astro/Layout.astro_astro_type_script_index_0_lang.DyH8HZto.js"></script><link rel="stylesheet" href="/_astro/generative-and-ai-systems.CLp177nQ.css"></head> <body class="bg-base-100 text-base-content flex flex-col justify-center items-center min-h-screen">  <header id="header" class="w-full pt-4 bg-base-100 sticky top-0 z-15"> <div class="max-w-[var(--max-content-width)] mx-auto mb-4"> <div class="w-full flex items-center px-5 sm:px-20"> <!-- Left: Title --> <a href="/" class="
+<!DOCTYPE html><!-- Import Tailwind + DaisyUI globally --><html lang="en" data-theme="portfolio"> <head><link rel="sitemap" href="/sitemap-index.xml"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Carles Antón</title><meta name="description" content="Carles Antón - Creative engineer specializing in real-time visuals, motion-tracking, generative systems interactive installations, Unreal Engine, TouchDesigner and P5JS"><meta name="google-site-verification" content="lKhRbGinmu_YZU8RJ5PCFWMdXKNm0UkoDV0AgY98XPQ"><!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" /> --><link rel="icon" type="image/x-icon" href="/img/favicon.png"><script type="module" src="/_astro/Layout.astro_astro_type_script_index_0_lang.DyH8HZto.js"></script><script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Carles Antón",
+        "url": "https://www.carlesanton.com/",
+        "jobTitle": "Interactive Installation Artist",
+        "description": "Carles Antón is an artist and creative technologist working with interactive installations, generative and AI systems, and real-time scenography.",
+        "sameAs": [
+          "https://github.com/carlesanton",
+          "https://www.linkedin.com/in/carles-anton-blasco/",
+          "https://www.instagram.com/carles.ant0n/",
+          "https://mastodon.social/@carlesanton"
+        ]
+      }
+    </script><link rel="stylesheet" href="/_astro/generative-and-ai-systems.B7Y9QKTh.css"></head> <body class="bg-base-100 text-base-content flex flex-col justify-center items-center min-h-screen">  <header id="header" class="w-full pt-4 bg-base-100 sticky top-0 z-15"> <div class="max-w-[var(--max-content-width)] mx-auto mb-4"> <div class="w-full flex items-center px-5 sm:px-20"> <!-- Left: Title --> <a href="/" class="
         relative inline-flex items-center gap-1
         font-mono text-2xl font-semibold text-black
         tracking-widest
@@ -37,35 +52,7 @@ Contact
         group-hover:scale-x-100
         transition-transform
         duration-500
-    "></div> </a> </nav> </div> </div> <div class="h-px bg-black !opacity-20 opacity-40"></div> </header> <section id="hero-section" class="relative z-0 flex items-center justify-center text-center w-full sm:sticky sm:top-0" style="padding-bottom: calc(var(--hero-overlap) * -1);"> <!-- style={`background-image: url('${bg_img}'); background-size: cover; background-position: center; background-attachment: fixed;  w-full`} --> <div id="p5-hero-bg" class="absolute inset-0 -z-10"></div> <!-- Dark overlay for contrast --> <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> --> <div class="max-w-[var(--max-content-width)] mx-auto"> <div id="hero-text" class="relative z-10 px-5 sm:px-20 w-full"> <h1 class="!text-8xl font-semibold text-black text-left sm:text-center font-sans tracking-tighter mt-8 sm:mt-26 mb-5">Carles Antón</h1> <h2 class="mx-auto w-[80%] md:w-[50%] text-right  !text-4xl font-medium text-black font-sans mb-16">Architecting the Technical Backbone for Immersive Experiences</h2> <h3 class="mb-10 sm:mb-26 text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-neutral text-left w-[100%] mx-auto font-light font-sans">Bridging the gap between complex creative vision and technical execution. Specializing in real-time visuals, motion-tracking, generative systems and custom hardware to build scalable frameworks that allow stories to breathe and audiences to connect. Focusing on the invisible engineering that makes the impossible feel effortless.</h3> </div> </div> </section> <script type="module">
-  const heroText = document.getElementById("hero-text");
-
-  const breakPointSize = 640;
-
-  function applyMask() {
-    const scrollTop = window.scrollY;
-    const heroTextHeight = heroText.offsetHeight - 50;
-
-    let maskPercent = Math.max(0, 100 - (scrollTop / heroTextHeight) * 100 - 30);
-    let maskPercentTop = maskPercent + 70;
-
-    heroText.style.maskImage = `linear-gradient(to bottom, black ${maskPercent}%, transparent ${maskPercentTop}%)`;
-  }
-
-  function handleScroll() {
-    if (window.innerWidth >= breakPointSize) {
-      applyMask();
-    } else {
-      heroText.style.maskImage = ""; // remove mask on small screens
-    }
-  }
-
-  window.addEventListener("scroll", handleScroll);
-  window.addEventListener("resize", handleScroll);
-
-  // apply initially
-  handleScroll();
-</script> <!-- <HeroScript/> -->  <section class="relative z-20 bg-base-100 w-full shadow-[-0px_-6px_12px_rgba(0,0,0,0.0)]" style="margin-top: var(--hero-overlap);"> <div class="max-w-[var(--max-content-width)] mx-auto"> <div class="mx-5 sm:mx-20"> <div class="max-w-[var(--max-content-width)]"> <p class="mt-8 sm:mt-30 text-2xl sm:text-4xl font-normal font-sans">Selected Work:</p> <!-- <div class="flex flex-wrap justify-center gap-6 mt-10 mx-5 sm:mx-20"> --> <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 mt-10 sm:mt-20"> <div class="w-full flex-1"> <a href="/projects/sorolla" class="group w-full transition h-auto"> <figure class="relative w-full overflow-hidden flex justify-center items-center h-100"> <img src="/img/sorolla/cover.png" alt="Sorolla, a new dimension" class="object-cover w-full h-full transition duration-300"> <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition duration-300"></div> </figure> <div class="card-body h-auto px-0"> <div class="w-fit"> <h2 class="card-title text-neutral font-sans text-xl font-medium">Sorolla, a new dimension</h2> <div class="
+    "></div> </a> </nav> </div> </div> <div class="h-px bg-black !opacity-20 opacity-40"></div> </header> <section id="hero-section" class="relative z-0 flex items-center justify-center text-center w-full sm:top-0"> <!-- style={`background-image: url('${bg_img}'); background-size: cover; background-position: center; background-attachment: fixed;  w-full`} --> <div id="p5-hero-bg" class="absolute inset-0 -z-10"></div> <!-- Dark overlay for contrast --> <!-- <div class="absolute inset-0 bg-black/40 z-0"></div> --> <div class="max-w-[var(--max-content-width)] mx-auto"> <div id="hero-text" class="relative z-10 px-5 sm:px-20 w-full"> <h1 class="!text-8xl font-semibold text-black text-left sm:text-center font-sans tracking-tighter mt-8 sm:mt-26 mb-5">Carles Antón</h1> <h2 class="mx-auto w-[80%] md:w-[50%] text-right  !text-4xl font-medium text-black font-sans mb-16">Architecting the Technical Backbone for Immersive Experiences</h2> <h3 class="mb-10 sm:mb-20 text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-neutral text-left w-[100%] mx-auto font-light font-sans">Bridging the gap between complex creative vision and technical execution. Specializing in real-time visuals, motion-tracking, generative systems, and custom hardware to build scalable frameworks that allow stories to breathe and audiences to connect. Focusing on the invisible engineering that makes the impossible feel effortless.</h3> </div> </div> </section> <!-- <HeroScript/> -->  <section class="relative z-20 bg-base-100 w-full"> <div class="max-w-[var(--max-content-width)] mx-auto"> <div class="mx-5 sm:mx-20"> <div class="max-w-[var(--max-content-width)]"> <p class="mt-8 sm:mt-30 text-2xl sm:text-4xl font-normal font-sans">Selected Work:</p> <!-- <div class="flex flex-wrap justify-center gap-6 mt-10 mx-5 sm:mx-20"> --> <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 mt-10 sm:mt-20"> <div class="w-full flex-1"> <a href="/projects/sorolla" class="group w-full transition h-auto"> <figure class="relative w-full overflow-hidden flex justify-center items-center h-100"> <img src="/img/sorolla/cover.png" alt="Sorolla, a new dimension" class="object-cover w-full h-full transition duration-300"> <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition duration-300"></div> </figure> <div class="card-body h-auto px-0"> <div class="w-fit"> <h2 class="card-title text-neutral font-sans text-xl font-medium">Sorolla, a new dimension</h2> <div class="
         left-0 bottom-[-8px]
         h-[1px] md:h-[2px]
         w-full
@@ -105,7 +92,7 @@ Contact
         group-hover:scale-x-100
         transition-transform
         duration-500
-    "></div> </div> <p class="text-left w-full overflow-y-auto text-xl font-sans font-light"> Interactive installation that merged the audience faces using AI to generate the collective face of the Tomorrowland Festival. </p> <p class="text-left w-full overflow-y-auto text-md text-slate-400 font-mono font-light"> Interactive Installation / AI / Generative Art / Infrastructure </p> </div> </a> </div> </div> </div> <section id="work" class="w-full mx-auto"> <div class="container max-w-[var(--max-content-width)] my-20"> <div class="h-px bg-black opacity-40"></div>  <a href="/categories/interactive-installations" class="block w-full group"> <div class="relative mx-5 sm:mx-20 my-10"> <div class="flex items-center"> <h2 class="text-3xl md:text-5xl lg:text-7xl font-medium font-mono uppercase text-black text-left w-2/3"> Interactive Installations </h2> <span class="text-3xl md:text-5xl lg:text-7xl font-medium font-mono text-black w-1/3 text-right">
+    "></div> </div> <p class="text-left w-full overflow-y-auto text-xl font-sans font-light"> Interactive installation that merged the audience faces using AI to generate the collective face of the Tomorrowland Festival. </p> <p class="text-left w-full overflow-y-auto text-md text-slate-400 font-mono font-light"> Interactive Installation / AI / Generative Art / Infrastructure </p> </div> </a> </div> </div> </div> <section id="work" class="w-full mx-auto"> <div class="container max-w-[var(--max-content-width)] my-20 sm:my-40"> <div class="h-px bg-black opacity-40"></div>  <a href="/categories/interactive-installations" class="block w-full group"> <div class="relative mx-5 sm:mx-20 my-10"> <div class="flex items-center"> <h2 class="text-3xl md:text-5xl lg:text-7xl font-medium font-mono uppercase text-black text-left w-2/3"> Interactive Installations </h2> <span class="text-3xl md:text-5xl lg:text-7xl font-medium font-mono text-black w-1/3 text-right">
 &gt;
 </span> </div> <div class="
         left-0 bottom-[-8px]
@@ -141,9 +128,43 @@ Contact
         group-hover:scale-x-100
         transition-transform
         duration-500
-    "></div> </div> </a> <div class="h-px bg-black opacity-40"></div>  </div> </section> </div> </div> </section>  <footer id="contact" class="w-full bg-base-200 py-12 mt-auto"> <div class="container max-w-[var(--max-content-width)] mx-auto"> <div class="flex flex-col md:flex-row justify-between gap-12 mx-5 sm:mx-20"> <!-- LEFT: Contact --> <div class="flex flex-col gap-6"> <h2 class="text-4xl md:text-6xl font-sans font-semibold text-black mb-10">
+    "></div> </div> </a> <div class="h-px bg-black opacity-40"></div>  </div> </section> <section id="tech-stack" class="w-full mx-auto"> <div class="max-w-[var(--max-content-width)] mx-auto my-20 sm:my-40"> <!-- Main Row --> <div class="flex flex-col md:flex-row items-start"> <!-- LEFT: Title --> <div class="shrink-0 md:mr-10 lg:mr-50"> <div class="text-2xl sm:text-4xl font-mono uppercase tracking-widest leading-tight text-gray-600">
+Technical <br> Stack
+</div> </div> <!-- RIGHT: Columns --> <div class="flex-1 mt-10 md:mt-0 sm:grid sm:grid-cols-3 sm:gap-x-12"> <!-- Visuals --> <div class="mb-10 sm:mb-0"> <h4 class="font-mono text-xs sm:text-xl font-bold uppercase mb-3 sm:mb-6 tracking-wider">
+01. Visuals
+</h4> <div class="font-mono text-sm sm:text-lg space-y-3 text-gray-600 flex flex-wrap gap-x-4 gap-y-0 sm:gap-y-2 sm:block"> <p class="mb-2"> TouchDesigner </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div><p class="mb-2"> Unreal Engine </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div><p class="mb-2"> P5JS / Processing </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div><p class="mb-2"> GLSL Shaders </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div> </div> </div> <!-- Systems --> <div class="mb-10 sm:mb-0"> <h4 class="font-mono text-xs sm:text-xl font-bold uppercase mb-3 sm:mb-6 tracking-wider">
+02. Systems
+</h4> <ul class="font-mono text-sm sm:text-lg space-y-3 text-gray-600 flex flex-wrap gap-x-4 gap-y-0 sm:gap-y-2 sm:block"> <p class="mb-2"> Python </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div><p class="mb-2"> Node.js </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div><p class="mb-2"> AWS </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div><p class="mb-2"> Docker </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div><p class="mb-2"> Brightsign </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 hidden sm:block opacity-40"></div> </ul> </div> <!-- Hardware --> <div> <h4 class="font-mono text-xs sm:text-xl font-bold uppercase mb-3 sm:mb-6 tracking-wider">
+03. Hardware
+</h4> <ul class="font-mono text-sm sm:text-lg space-y-3 text-gray-600 flex flex-wrap gap-x-4 gap-y-0 sm:gap-y-2 sm:block"> <p class="mb-2"> Kinect </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 opacity-40"></div><p class="mb-2"> Arduino / ESP32 </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 opacity-40"></div><p class="mb-2"> OSC / MQTT </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 opacity-40"></div><p class="mb-2"> PCB Design </p>
+                <p class="block sm:hidden"></p>
+                <div class="h-px bg-gray-400 opacity-40"></div> </ul> </div> </div> </div> </div> </section> </div> </div> </section>  <footer id="contact" class="w-full bg-base-200 py-12 mt-auto"> <div class="container max-w-[var(--max-content-width)] mx-auto"> <div class="flex flex-col md:flex-row justify-between gap-12 mx-5 sm:mx-20"> <!-- LEFT: Contact --> <div class="flex flex-col gap-6"> <h2 class="text-6xl font-sans font-semibold text-black mb-5 sm:mb-10">
 Contact
-</h2> <div class="flex flex-col gap-3 text-xl md:text-2xl font-sans"> <!-- Email --> <a href="mailto:carles.anton97@gmail.com" class="group w-fit text-neutral"> <span class="block">carles.anton97@gmail.com</span> <div class="
+</h2> <div class="flex flex-col gap-3 text-xl md:text-2xl font-sans"> <!-- Email --> <a href="mailto:info@carlesanton.com" class="group w-fit text-neutral"> <span class="block">info@carlesanton.com</span> <div class="
         left-0 bottom-[-8px]
         h-[1px] md:h-[2px]
         w-full
@@ -163,9 +184,9 @@ Contact
         group-hover:scale-x-100
         transition-transform
         duration-500
-    "></div> </a> </div> </div> <!-- RIGHT: Socials --> <div class="grid grid-cols-2 gap-x-10 gap-y-6 text-xl sm:text-2xl font-mono self-center sm:self-end"> <div class="group w-fit"> <a href="https://github.com/carlesanton" target="_blank" class="block">
+    "></div> </a> </div> </div> <!-- RIGHT: Socials --> <div class="grid grid-cols-4 sm:grid-cols-2 gap-x-10 gap-y-6 text-xl sm:text-2xl font-mono self-center sm:self-end"> <div class="group w-fit"> <a href="https://github.com/carlesanton" target="_blank" class="hidden sm:block">
 GitHub
-</a> <div class="
+</a> <a href="https://github.com/carlesanton" target="_blank" class="block sm:hidden"> <svg width="30" height="30" data-icon="github">   <symbol id="ai:local:github" viewBox="0 0 640 640"><path fill="currentColor" d="M237.9 461.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M316.8 72C178.1 72 72 177.3 72 316c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C500.2 521.8 568 426.9 568 316c0-138.7-112.5-244-251.2-244M169.2 416.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></symbol><use href="#ai:local:github"></use>  </svg> </a> <div class="
         left-0 bottom-[-8px]
         h-[1px] md:h-[2px]
         w-full
@@ -175,9 +196,9 @@ GitHub
         group-hover:scale-x-100
         transition-transform
         duration-500
-    "></div> </div> <div class="group w-fit"> <a href="https://instagram.com/carles.ant0n" target="_blank" class="block">
+    "></div> </div> <div class="group w-fit"> <a href="https://instagram.com/carles.ant0n" target="_blank" class="hidden sm:block">
 Instagram
-</a> <div class="
+</a> <a href="https://instagram.com/carles.ant0n" target="_blank" class="block sm:hidden"> <svg width="30" height="30" data-icon="instagram">   <symbol id="ai:local:instagram" viewBox="0 0 640 640"><path fill="currentColor" d="M320.3 205c-63.5-.2-115.1 51.2-115.3 114.7S256.2 434.8 319.7 435 434.8 383.8 435 320.3 383.8 205.2 320.3 205m-.6 40.4c41.2-.2 74.7 33.1 74.9 74.3s-33.1 74.7-74.3 74.9-74.7-33.1-74.9-74.3 33.1-74.7 74.3-74.9m93.4-45.1c0-14.8 12-26.8 26.8-26.8s26.8 12 26.8 26.8-12 26.8-26.8 26.8-26.8-12-26.8-26.8m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M495 452c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></symbol><use href="#ai:local:instagram"></use>  </svg> </a> <div class="
         left-0 bottom-[-8px]
         h-[1px] md:h-[2px]
         w-full
@@ -187,9 +208,9 @@ Instagram
         group-hover:scale-x-100
         transition-transform
         duration-500
-    "></div> </div> <div class="group w-fit"> <a href="https://bsky.app/profile/carles-anton.bsky.social" target="_blank" class="block">
+    "></div> </div> <div class="group w-fit"> <a href="https://bsky.app/profile/carles-anton.bsky.social" target="_blank" class="hidden sm:block">
 Bluesky
-</a> <div class="
+</a> <a href="https://bsky.app/profile/carles-anton.bsky.social" target="_blank" class="block sm:hidden"> <svg width="30" height="30" data-icon="bluesky">   <symbol id="ai:local:bluesky" viewBox="0 0 640 640"><path fill="currentColor" d="M439.8 358.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M320 291.1c-26.1-50.7-97.1-145.2-163.1-191.8-63.3-44.7-87.4-37-103.3-29.8C35.3 77.8 32 105.9 32 122.4S41.1 258 47 277.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C252.6 653.1 297.1 501.8 320 425.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7 5.9-19.9 15-138.9 15-155.5s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8-66.1 46.6-137.1 141.1-163.2 191.8"/></symbol><use href="#ai:local:bluesky"></use>  </svg> </a> <div class="
         left-0 bottom-[-8px]
         h-[1px] md:h-[2px]
         w-full
@@ -199,9 +220,9 @@ Bluesky
         group-hover:scale-x-100
         transition-transform
         duration-500
-    "></div> </div> <div class="group w-fit"> <a href="https://mastodon.social/@carlesanton" target="_blank" class="block">
+    "></div> </div> <div class="group w-fit"> <a href="https://mastodon.social/@carlesanton" target="_blank" class="hidden sm:block">
 Mastodon
-</a> <div class="
+</a> <a href="https://mastodon.social/@carlesanton" target="_blank" class="block sm:hidden"> <svg width="30" height="30" data-icon="mastodon">   <symbol id="ai:local:mastodon" viewBox="0 0 640 640"><path fill="currentColor" d="M529 243.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V254.1c0-49.7-64-51.6-64 6.9v62.5H297V261c0-58.5-64-56.6-64-6.9v114.2h-46.7c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></symbol><use href="#ai:local:mastodon"></use>  </svg> </a> <div class="
         left-0 bottom-[-8px]
         h-[1px] md:h-[2px]
         w-full
