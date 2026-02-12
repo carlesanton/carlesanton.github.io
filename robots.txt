@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://carlesanton.com/sitemap-index.xml
+Sitemap: https://www.carlesanton.com/sitemap-index.xml
